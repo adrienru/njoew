@@ -1,0 +1,94 @@
+/* Estilos Globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: radial-gradient(circle at top right, #0d1b2a, #1b263b);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: #e0e1dd;
+}
+
+/* Contenedor Principal (Glassmorphism) */
+.glass-container {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 40px;
+    width: 95%;
+    max-width: 1000px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* Cabecera */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 15px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #00aeff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#date-display {
+    font-size: 0.9rem;
+    color: #8d99ae;
+}
+
+/* Área del Calendario */
+.calendar-card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.calendar-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Pie de página y Reloj */
+footer {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.clock-section {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 174, 255, 0.3);
+}
+
+.label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    margin-right: 10px;
+    color: #8d99ae;
+}
+
+#digital-clock {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    color: #00aeff;
+    text-shadow: 0 0 10px rgba(0, 174, 255, 0.5);
+}
