@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Académico | Central</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="glass-container">
+        <header>
+            <h1>Dashboard Académico</h1>
+            <div id="date-display">-- / -- / ----</div>
+        </header>
+        
+        <main class="calendar-card">
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FLima&src=dW5pYWRyaWFuaXBhbmFxdWVAZ21haWwuY29t&src=YjI0OWEyNzFkYjRkY2ZhMzhmNDU5NmM2ZGQyMmUxMTk2NmQ0MGE3NjNkNGM4YzNjNWExYzQwY2ZiNjM5ZDgyN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4ucGUjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%2300aeff&color=%237986cb&color=%230b8043" 
+            style="border:none" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+        </main>
+
+        <footer>
+            <div class="clock-section">
+                <span class="label">Sincronizado:</span>
+                <span id="digital-clock">00:00:00</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
